@@ -95,4 +95,4 @@ async def predict(ctx, filename):
 
 
 
-mainClient.run('ODUzMDQxNTgxMzUwNDUzMzA5.YMPm4Q.RXwvh_EfJA1QoBbTjnmx4AiLUOE')
+mainClient.run('<Token>')
