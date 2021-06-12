@@ -4,16 +4,13 @@ const int trig = 7;
 // Echo pin
 const int echo = 6;
 
-// distance
-int dist;
-
 // distance diff trigger
 
 // Ultrasonic sensor ----------
 
 // Motion sensor --------------
 // motion sensor input
-const int motion =1;
+const int motion =5;
 // Motion sensor --------------
 
 // Leds -----------------------
@@ -48,42 +45,19 @@ void setup(){
     Serial.begin(9600);
 }
 
+bool prevMotion = false;
+bool prevCrossed = false;
+
 void loop(){
-    // check serial port
-        // set boolean for exepcting someone to true or false
-    
-    if (Serial.available() > 0){
-        inputChar = Serial.read();
+      
+    if (digitalRead(motion) == HIGH){
+      Serial.println("motion");
+      
     }
-
-    while (inputChar == 'y'){
-        if (digitalRead(motion) == HIGH){
-            Serial.println("motion");
-        }
-        if (crossed() == true){
-          Serial.println("crossed");
-        }
+    if (crossed() == true){
+      Serial.println("crossed");
     }
-    else{
-
-    }
-    // Are you expecting someone?
-        //No
-        // check if there is motion
-            // if there is send signal to serial port (alret)
-        
-        // check if someone crossed
-            // if they did, send signal to serial port (alret)
-
-        //Yes
-        // check if their is motion
-            //send signal through serial port (check if their is a person)
-
-        // check if someone crossed
-            //send signal through serial port (check if their is a person)
-    
-    
-
+   
 }
 
 float duration;

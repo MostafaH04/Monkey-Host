@@ -3,6 +3,24 @@ from discord import embeds
 from discord import client
 from discord import guild
 from discord.ext import commands
+import json 
+
+def addStuff(name, time):
+    with open('info.json') as infoFile:
+        coming = json.load(infoFile)
+    print("hey")
+    coming[name] = time
+    print(coming)
+    with open("info.json", "w+") as outfile: 
+        json.dump(coming, outfile)
+
+def removeStuff(name):
+    print("hey")
+    with open('info.json') as infoFile:
+        coming = json.load(infoFile)
+    coming.pop(name)
+    with open("info.json", "w+") as outfile: 
+        json.dump(coming, outfile)
 
 intents = discord.Intents.default()
 intents.members = True
@@ -41,7 +59,7 @@ async def rsvp(ctx,name, pn, time):
         description = 'Time reaching: ' + str(time) + '\n\nPhone number: ' + str(pn),
         colour = discord.Colour.green()
     )
-    
+    addStuff(str(name), str(time))
     await confirmChannel.send(embed = confirmEmbed)
 
 @mainClient.command()
@@ -55,6 +73,7 @@ async def cancel(ctx, name):
         description = 'They will no longer attend the party',
         colour = discord.Colour.dark_red()
     )
+    removeStuff(str(name))
     await cancelChannel.send(embed = cancelEmbed)
 
 @mainClient.command()
@@ -67,7 +86,10 @@ async def howto(ctx):
     embed1.set_author(name='Banana Party!')
     await ctx.send(embed = embed1)
 
-
+@mainClient.command()
+async def predict(ctx, filename):
+    print(check.startSearch())
+    check.vidOut(filename)
 
 
 

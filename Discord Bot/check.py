@@ -20,6 +20,10 @@ def startSearch():
     countPers = 0
     currTime = time.time()
     startingTime = currTime
+    try:
+        os.remove("1.png")
+    except:
+        print("1.png does not exists, proceeding on")
     while True:
         success, frame = cap.read()
         key = cv2.waitKey(1) 
@@ -53,7 +57,7 @@ def startSearch():
 
         if key == ord('q'): 
             break
-    
+    os.remove("1.png")
     return False
 
 path = "vidsout\\"
