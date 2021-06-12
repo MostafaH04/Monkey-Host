@@ -7,8 +7,8 @@ Authors: Mostafa H, Amaar S, Shavaiz K, Shahnawaz K
 1b. paired with the hardware part and discord bot, we are able to save computational resources by having some idea of when to check  
 
 2) Discord bot allows user to enter their name, phone number, and time they will attend.  
-2a. Once the user uses the command, the bot will send them a confirmation in chat and the bot will send a message to a channel that only moderators have access to.
-2b. User can also cancel their RSVP. Bot will again send confirmation in chat and will send a message to another private channel.
+2a. Once the user uses the command, the bot will send them a confirmation in chat and the bot will send a message to a channel that only moderators have access to.  
+2b. User can also cancel their RSVP. Bot will again send confirmation in chat and will send a message to another private channel.  
 
 3) We use the arduino uno, paired with the ultrasonic sensor and motion sensor in order to detect any movement / people walking through the door  
 3a. The ultrasonic sensor is placed on a door way or at the enterance to see if an object is near by, and so is the motion sensor. This gives the program an idea of when a person might be at the door  
