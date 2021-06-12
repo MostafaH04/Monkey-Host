@@ -1,1 +1,1 @@
-bot token = ODUzMDQxNTgxMzUwNDUzMzA5.YMPm4Q.RXwvh_EfJA1QoBbTjnmx4AiLUOE
+bot token = <Token>
