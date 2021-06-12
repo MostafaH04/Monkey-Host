@@ -7,7 +7,7 @@ Authors: Mostafa H, Amaar S, Shavaiz K, Shahnawaz K
 1b. paired with the hardware part and discord bot, we are able to save computational resources by having some idea of when to check  
 
 2) Discord bot used to schedule party time, send notifications, rsvp and notify friends when party is full  
-2a. uses the Discord API and is run using python  
+2a. uses the Discord API and is run using python    
 2b. allows the user to RSVP by giving their Name, phone number (to reach them on) and the time they are arriving  
 
 3) We use the arduino uno, paired with the ultrasonic sensor and motion sensor in order to detect any movement / people walking through the door  
