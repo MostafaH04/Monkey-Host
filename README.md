@@ -10,7 +10,7 @@ Authors: Mostafa H, Amaar S, Shavaiz K, Shahnawaz K
 2a. uses the Discord API and is run using python  
 2b. allows the user to RSVP by giving their Name, phone number (to reach them on) and the time they are arriving  
 
-3) We use the arduino uno, paired with the ultrasonic sensor and motion sensor in order to detect any movement / people walking through the door
+3) We use the arduino uno, paired with the ultrasonic sensor and motion sensor in order to detect any movement / people walking through the door  
 3a. The ultrasonic sensor is placed on a door way or at the enterance to see if an object is near by, and so is the motion sensor. This gives the program an idea of when a person might be at the door  
 3b. if the users are expecting someone at the door at that time, the user is notified (not urgently), however if they werent, a more urgent alarm is sent for the host to verify who is at the door  
 
