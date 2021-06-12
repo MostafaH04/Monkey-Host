@@ -1,5 +1,6 @@
 # Monkey-Host 
-Project made for Banana Hacks 2021  
+Project made for Banana Hacks 2021
+Award: Top 5 Finalists + Best Hardware Hack
 Authors: Mostafa H, Amaar S, Shavaiz K, Shahnawaz K  
 
 1) Person counting system using ML based on a CNN trained using tensorflow library  
