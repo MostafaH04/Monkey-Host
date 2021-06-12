@@ -14,7 +14,7 @@ Authors: Mostafa H, Amaar S, Shavaiz K, Shahnawaz K
 3a. The ultrasonic sensor is placed on a door way or at the enterance to see if an object is near by, and so is the motion sensor. This gives the program an idea of when a person might be at the door
 3b. if the users are expecting someone at the door at that time, the user is notified (not urgently), however if they werent, a more urgent alarm is sent for the host to verify who is at the door
 
-4) We plan on having a database housing info like sign ups and how many people attended
+4) We plan on having a database housing info like sign ups and how many people attended\n
 4a. Used to send on the discord server when the party is full
 4b. could be used later on to implement and application to the system it self
 
