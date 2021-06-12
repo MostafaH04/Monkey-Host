@@ -51,7 +51,7 @@ def startSearch():
 
         os.remove("1.png")
 
-        if key == ord('q'):
+        if key == ord('q'): 
             break
     
     return False
